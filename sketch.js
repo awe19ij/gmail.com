@@ -28,14 +28,14 @@ function toggleplaying(){
 }
 
 function loadmusic(){
-    console.log('it's aaaa');
+    console.log('its aaaa');
 }
 
 //function loadmusic() {
 //    musicFile.play 
 
 function draw() {
-    FileList(255,0,0);
+    fill(255,0,0);
     ellipse(50, 50, 100, 100);
 }
 
