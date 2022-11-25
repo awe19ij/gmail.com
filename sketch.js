@@ -24,7 +24,8 @@ function toggleplaying(){
         musicFile.setVolume(0.3);
         button.html('pause');
 
-    } else{
+    } 
+    else{
         musicFile.stop();
         button.html('play');
     }
