@@ -1,17 +1,16 @@
-//let musicFile;
-//let button;
+let musicFile;
+let button;
 
-var song;
-var button;
+//var song;
+//var button;
 //let musicFile;
 function setup() {
     createCanvas(640, 480);
     soundFormats('mp3', 'ogg');
     musicFile = loadSound('nuropi',loadmusic);
     //song =loadSound('nuropi', loaded);
-    button = createButton('play');
+    button = createButton("play");
     button.mousePressed(toggleplaying);
-    background(51);
 // ------------------------------------
         // let mysound;
         //mysound 
@@ -21,25 +20,22 @@ function setup() {
 function toggleplaying(){
     if(!musicFile.isPlaying()){
         musicFile.play();
-        musicFile.setVolume(0.3);
         button.html('pause');
-
-    } 
-    else{
+    }else{
         musicFile.stop();
         button.html('play');
     }
 }
 
-function loaded(){
-    console.log('loaded');
+function loadmusic(){
+    console.log('it's aaaa');
 }
 
-function loadmusic() {
-    musicFile.play();
-} 
+//function loadmusic() {
+//    musicFile.play 
 
 function draw() {
-
+    FileList(255,0,0);
+    ellipse(50, 50, 100, 100);
 }
 
