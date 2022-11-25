@@ -1,11 +1,11 @@
-let musicFile;
-let button;
+//let musicFile;
+//let button;
 
 var song;
 var button;
 //let musicFile;
 function setup() {
-    createCanvas(200, 200);
+    createCanvas(640, 480);
     soundFormats('mp3', 'ogg');
     musicFile = loadSound('nuropi',loadmusic);
     //song =loadSound('nuropi', loaded);
@@ -25,7 +25,7 @@ function toggleplaying(){
         button.html('pause');
 
     } else{
-        song.stop();
+        musicFile.stop();
         button.html('play');
     }
 }
@@ -39,6 +39,6 @@ function loadmusic() {
 } 
 
 function draw() {
-    
+
 }
 
